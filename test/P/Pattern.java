@@ -19,6 +19,7 @@ public class Pattern {
 			}
 			System.out.println();
 		}
+		// ------------------------------------------------------
 		// dec order
 //		*****
 //		****
@@ -30,6 +31,45 @@ public class Pattern {
 			for (int j = 4; j >= i; j--) {
 				System.out.print("*");
 			}
+
+			System.out.println();
+		}
+		// ------------------------------------------------------
+
+//		
+//		    *
+//		   **
+//		  ***
+//		 ****
+//		*****
+
+		for (int i = 0; i <= 5; i++) {
+			for (int j = 4; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 0; k <= i; k++) {
+				System.out.print("*");
+			}
+
+			System.out.println();
+		}
+
+		// pyramid
+//		  *
+//	     * *
+//	    * * *
+//	   * * * *
+//	  * * * * *
+//	 * * * * * *
+
+		for (int i = 0; i <= 5; i++) {
+			for (int j = 4; j >= i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 0; k <= i; k++) {
+				System.out.print(" *");
+			}
+
 			System.out.println();
 		}
 

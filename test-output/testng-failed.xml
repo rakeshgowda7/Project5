@@ -6,10 +6,10 @@
       <class name="test.HomePageTest">
         <methods>
           <include name="VerifyTitleTest"/>
+          <include name="VerifyAdvertisePageTest"/>
           <include name="tearDown"/>
           <include name="SetUp"/>
           <include name="VerifyUserProfileTest"/>
-          <include name="VerifyMobImgTest"/>
         </methods>
       </class> <!-- test.HomePageTest -->
     </classes>

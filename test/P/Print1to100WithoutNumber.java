@@ -13,7 +13,6 @@ public class Print1to100WithoutNumber {
 //		for(int i=one;i<='d';i++) {
 //			System.out.println(i);
 //		}
-
 	}
 
 }

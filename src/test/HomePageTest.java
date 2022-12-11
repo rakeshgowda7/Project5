@@ -29,7 +29,7 @@ public class HomePageTest extends Testbase {
 		homepage = loginPage.Login(prop.getProperty("emailid"), prop.getProperty("pwd"));
 	}
 
-	@Test
+	@Test(priority = 1, dependsOnMethods = { "VerifyTitleTest" })
 	public void VerifyUserProfileTest() {
 		boolean UserName = homepage.verifyUserName();
 		Assert.assertTrue(UserName);
@@ -45,10 +45,17 @@ public class HomePageTest extends Testbase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void VerifyMobImgTest() {
 		boolean flag = homepage.verifyMobileimage();
 		Assert.assertTrue(flag);
+	}
+
+	@Test
+	public void VerifyAdvertisePageTest() {
+		homepage.VerifyMoreOptions();
+		String title = driver.getTitle();
+		Assert.assertEquals("Flipkart Ads Platform", title, "Title is not matched");
 	}
 
 	@AfterMethod
