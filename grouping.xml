@@ -11,10 +11,10 @@
 		</groups>
 		<classes>
 			<class name="practice.TestNgGroups" />
-		</classes>
+		</classes>  
 	</test> <!-- Test -->
-</suite> <!-- Suite -->
-
+</suite> <!-- Suite -->  
+   
 
 
 
