@@ -7,16 +7,17 @@ public class SeperatingCharacters {
 		String Alpha = " ";
 		String numeric = " ";
 		String special = " ";
+		char[] arr = Str.toCharArray();
 
-		for (int i = 0; i < Str.length(); i++) {
-			char ch = Str.charAt(i);
-			if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-				Alpha = Alpha + ch;
+		for (int i = 0; i < arr.length; i++) {
+//			char ch = Str.charAt(i);
+			if ((arr[i] >= 'A' && arr[i] <= 'Z') || (arr[i] >= 'a' && arr[i] <= 'z')) {
+				Alpha = Alpha + arr[i];
 
-			} else if (ch >= 48 && ch <= 57) {
-				numeric = numeric + ch;
+			} else if (arr[i] >= 48 && arr[i] <= 57) {
+				numeric = numeric + arr[i];
 			} else
-				special = special + ch;
+				special = special + arr[i];
 
 		}
 		System.out.println("Alpha cases are :" + Alpha);

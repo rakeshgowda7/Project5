@@ -7,9 +7,9 @@ public class RepeatedCharacter {
 
 	public static void main(String[] args) {
 		String Str1 = "Rakesh AS Gowdaa";
-		char[] S1 = Str1.toCharArray();
+		char[] arr = Str1.toCharArray();
 		Map<Character, Integer> charmap= new HashMap<Character, Integer>();
-		for(char ch : S1) {
+		for(char ch : arr) {
 			if(charmap.containsKey(ch)) {
 				charmap.put(ch,charmap.get(ch)+1 );
 			}

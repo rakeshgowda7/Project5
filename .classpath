@@ -7,6 +7,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="java"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jdk-17.0.5/lib/jrt-fs.jar">
 		<attributes>
 			<attribute name="module" value="true"/>

@@ -41,6 +41,7 @@ public class Testbase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicit_wait));
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
+		
 
 	}
 }
