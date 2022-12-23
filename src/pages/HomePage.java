@@ -13,8 +13,10 @@ public class HomePage extends Testbase {
 
 	@FindBy(xpath = "//div[contains(text(),'Rakesh Gowda')]")
 	private WebElement profileName;
+	
 	@FindBy(xpath = "//img[@alt='Mobiles']")
 	private WebElement MobileImg;
+	
 	@FindBy(xpath = "//div[@class='exehdJ']")
 	private WebElement More;
 	@FindBy(xpath = "(//div[@class='_3vhnxf'])[3]")

@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.HomePageTest">
+      <class name="practice.MouseHover">
         <methods>
-          <include name="VerifyTitleTest"/>
-          <include name="VerifyAdvertisePageTest"/>
-          <include name="tearDown"/>
-          <include name="SetUp"/>
-          <include name="VerifyUserProfileTest"/>
+          <include name="openbrowser"/>
+          <include name="mousehoverTest"/>
         </methods>
-      </class> <!-- test.HomePageTest -->
+      </class> <!-- practice.MouseHover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

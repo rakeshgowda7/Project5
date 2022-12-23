@@ -52,8 +52,8 @@ public class MouseHover {
 		act.moveToElement(ele).build().perform();
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Computers and tablets')]")));
+//		wait.until(ExpectedConditions
+//				.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Computers and tablets')]")));
 		WebElement ele1 = driver.findElement(By.xpath("//a[contains(text(),'Computers and tablets')]"));
 		act.moveToElement(ele1).click().build().perform();
 		String url = driver.getCurrentUrl();

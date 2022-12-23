@@ -49,6 +49,7 @@ public class HomePageTest extends Testbase {
 	public void VerifyMobImgTest() {
 		boolean flag = homepage.verifyMobileimage();
 		Assert.assertTrue(flag);
+		
 	}
 
 	@Test
