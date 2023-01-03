@@ -9,11 +9,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class Links {
-
-	public static void main(String[] args) throws InterruptedException {
+public class LinksTest {
+@Test
+	public  void links() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Solus\\Desktop\\drivers\\chromedriver.exe");
+//		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -33,8 +35,8 @@ public class Links {
 			footersublinks.get(i).sendKeys(Keys.CONTROL, Keys.ENTER);
 
 		}
-		
-		//Get the Title of all windows by switching each window 
+
+		// Get the Title of all windows by switching each window
 		Set<String> allids = driver.getWindowHandles();
 		for (String id : allids) {
 			String Title = driver.switchTo().window(id).getTitle();

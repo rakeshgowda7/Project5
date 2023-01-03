@@ -3,11 +3,20 @@
 <suite name="Failed suite [Flipkart]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Flipkart test(failed)">
     <classes>
+      <class name="test.LoginPageTest">
+        <methods>
+          <include name="LoginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.LoginPageTest -->
       <class name="test.HomePageTest">
         <methods>
+          <include name="VerifyAdvertisePageTest"/>
+          <include name="VerifyTitleTest"/>
           <include name="tearDown"/>
           <include name="SetUp"/>
-          <include name="VerifyMobImgTest"/>
+          <include name="VerifyUserProfileTest"/>
         </methods>
       </class> <!-- test.HomePageTest -->
     </classes>

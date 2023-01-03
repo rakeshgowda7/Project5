@@ -25,11 +25,10 @@ public class Testbase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
-
 	public void openbrowser() {
-		String browserName = prop.getProperty("browser");
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Solus\\Desktop\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
@@ -41,7 +40,6 @@ public class Testbase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.implicit_wait));
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("url"));
-		
 
 	}
 }
