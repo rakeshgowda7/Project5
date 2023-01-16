@@ -34,7 +34,7 @@ public class HomePageTest extends Testbase {
 		boolean UserName = homepage.verifyUserName();
 		Assert.assertTrue(UserName);
 	}
-
+	
 	@Test
 	public void VerifyTitleTest() {
 		String title = homepage.HomePageTitle();

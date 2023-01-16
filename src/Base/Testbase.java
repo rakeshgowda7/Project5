@@ -28,7 +28,7 @@ public class Testbase {
 	}
 	public void openbrowser() {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
-				: prop.getProperty("browser");
+				: prop.getProperty("browser"); // global variable and one from property file
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Solus\\Desktop\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();

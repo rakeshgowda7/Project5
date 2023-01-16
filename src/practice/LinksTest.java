@@ -12,9 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class LinksTest {
-@Test
-	public  void links() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Solus\\Desktop\\drivers\\chromedriver.exe");
+	@Test
+	public void links() throws InterruptedException {
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Solus\\Desktop\\drivers\\chromedriver.exe");
 //		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
@@ -22,7 +22,7 @@ public class LinksTest {
 
 		List<WebElement> pageLinks = driver.findElements(By.tagName("a"));
 		System.out.println("Total page links : " + pageLinks.size());
-
+ 
 		WebElement footer = driver.findElement(By.id("gf-BIG"));
 		List<WebElement> footerLinks = footer.findElements(By.tagName("a"));
 		System.out.println("Footer page links : " + footerLinks.size());
