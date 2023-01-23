@@ -1,4 +1,4 @@
-package practice;
+ package practice;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -22,7 +22,7 @@ public class DataProvider1 {
 		System.out.println(un);
 		System.out.println(pwd);
 	}
-
+ 
 	@Test
 	public void LoginTest4() {
 		System.out.println("fourth test");
